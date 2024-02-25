@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Results</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Sentiment Analysis Results</h1>
+    </header>
+
+    <section class="sentiment-info">
+        <h2>Sentiment Information</h2>
+        <p>Sentiment Score: <span id="sentimentScore">{{sentiment_score}}</span></p>
+        <p>Sentiment Label: <span id="sentimentLabel">{{sentiment_label}}</span></p>
+    </section>
+
+    <section class="article-list">
+        
+        <ul id="articleList">
+            {% if sentiment_score<0.5 %}
+                <h2>Related Articles</h2>
+                {% for article in recommend_resources() %}
+                    
+                    <li>
+                        <a href="{{article.url}}">{{article.url}}</a>
+                        
+                    </li>
+                {% endfor %}
+            {% endif %}
+        </ul>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

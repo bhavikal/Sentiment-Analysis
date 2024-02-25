@@ -1,0 +1,74 @@
+.typeimg {
+    width: 45px;
+    height: 45px;
+    float: left;
+  }
+
+  .h1 {
+    text-align: center;
+  }
+  
+  .title a {
+    color: teal;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 0px;
+    line-height: 25px;
+  }
+  
+  .owner {
+    line-height: 20px;
+    color: black;
+  }
+  
+  .description {
+    font-family: "arial", sans-serif;
+    text-align: justify;
+    font-size: 13px;
+  }
+  
+  .myStatus {
+    float: right;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .myContainer {
+    padding: 5px;
+    max-width: 500px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+  }
+  .reflection-form {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.reflectionForm {
+    width: 300px; /* Set a specific width if needed */
+}
+
+.reflectionForm label{
+    margin-bottom: 30px;
+}
+
+.reflectionForm textarea{
+    margin-bottom: 30px;
+}
+.reflectionForm input[type="submit"] {
+    margin-bottom: 20px; /* Add some vertical spacing between elements */
+}
+.centered-container {
+  text-align: center;
+  margin-top: 20px; 
+}
+
+.centered-text {
+  display: inline-block;
+  text-align: left;
+}
+
+
+  
