@@ -64,7 +64,5 @@ def recommend_resources():
     
 
 if __name__ == '__main__':
-    #request = {'json': "{\"data\":{}}"}
-   #print(sentiment_analysis(request))
     app.run(debug=True, port=5001)
 
