@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 import random
 
 
-# Set up your API key
+# Set up API key
 api_key = 'b71b2162991543ec8aeee0d002a5845b'
 
 start_date = datetime.now() - timedelta(days=random.randint(1, 30))
@@ -12,8 +12,9 @@ from_date = start_date.strftime('%Y-%m-%d')
 # Make a GET request to the News API endpoint
 url = 'https://newsapi.org/v2/everything'
 params = {
+    # Add keywords related to mental health
     'apiKey': api_key,
-    'q': 'tips for mental health',  # Add keywords related to mental health
+    'q': 'tips for mental health',  
     'pageSize': 5,
     'from': from_date
 }
